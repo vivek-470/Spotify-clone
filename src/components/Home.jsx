@@ -4,7 +4,7 @@ import { CiGlobe } from "react-icons/ci";
 import gta from '../assets/Images/gta.jpg';
 import crowd from '../assets/Images/crowd.jpg';
 import vidyasagar from '../assets/Images/vidyasagar.jpg';
-import finding from '../assets/Images/finding.jpg';
+
 import backlash from '../assets/Images/backlash.jpg';
 import maand from '../assets/images/maand.jpg';
 import pritam from '../assets/Images/pritam.jpg'
@@ -17,7 +17,7 @@ const songs = [
   { img: gta, title: "Pal Pal", artist: "Afusic, AliSoomro Music" },
   { img: crowd, title: "Superstar", artist: "dox, JASKARAN, Rita Kim" },
   { img: vidyasagar, title: "Thottu Thottu", artist: "Swarnalatha, Pushpavanam" },
-  { img: finding, title: "Finding Her", artist: "Kushagra, Bharath, Saaheal" },
+  { img: vidyasagar, title: "Finding Her", artist: "Kushagra, Bharath, Saaheal" },
   { img: backlash, title: "BACKLASH", artist: "Prem Dhillon, The Kidd" },
   { img: maand, title: "Maand", artist: "Bayaa, Hasan Raheem, Rovalio" },
 
