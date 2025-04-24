@@ -4,7 +4,6 @@ import { CiGlobe } from "react-icons/ci";
 import gta from '../assets/Images/gta.jpg';
 import crowd from '../assets/Images/crowd.jpg';
 import vidyasagar from '../assets/Images/vidyasagar.jpg';
-
 import backlash from '../assets/Images/backlash.jpg';
 import maand from '../assets/images/maand.jpg';
 import pritam from '../assets/Images/pritam.jpg'
@@ -41,6 +40,7 @@ const SongCard = ({ img, title, artist }) => (
 );
 
 const Home = () => {
+ 
   return (
     <div className='flex bg-black min-h-screen p-2 gap-[10px]'>
       {/* Sidebar */}
@@ -51,6 +51,7 @@ const Home = () => {
         </div>
 
         <div className='bg-zinc-700 p-4 rounded-md mt-0'>
+        
           <h2 className='font-bold mb-1'>Create your first playlist</h2>
           <p className='text-sm'>It’s easy, we’ll help you</p>
           <button className='mt-3 bg-white text-black font-bold py-1 px-4 rounded-full hover:scale-105 transition'>
