@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
   <>
   
-    <nav className='flex bg-black w-full text-white gap-4 h-[60px] items-center md:w-[100%] realtive'>
+    <nav className='flex fixed bg-black w-full text-white gap-4 h-[60px] items-center md:w-[100%] realtive'>
   
     <FaSpotify className='text-3xl ml-4 ' />
     <IoHome className='text-3xl ml-4 hover:scale-110 transition-transform duration-300 ease-in-out ' />
