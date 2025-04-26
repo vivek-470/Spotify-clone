@@ -39,7 +39,7 @@ export default function Navbar() {
     </div>
       <div className="text-gray-300  gap-4  ml-40 border-r-2 border-r-white w-[250px] hidden md:flex">
         <h1 className='hover:text-white font-semibold hover:scale-110 transition-transform duration-300 ease-in-out '><Link to="support">Support</Link></h1>
-        <h1 className='hover:text-white font-semibold hover:scale-110 transition-transform duration-300 ease-in-out'><Link to="Premium">Premium</Link></h1>
+        <h1 className='hover:text-white font-semibold hover:scale-110 transition-transform duration-300 ease-in-out'><Link to="premium">Premium</Link></h1>
         <h1 className='hover:text-white font-semibold hover:scale-110 transition-transform duration-300 ease-in-out'><Link to="download">Download</Link></h1>
 
       </div>
@@ -56,15 +56,23 @@ export default function Navbar() {
       <button onClick={Changeicon} className='w-[30px]  ml-12 text-2xl lg:hidden'>
         {icon?<RxCross1 />:<GiHamburgerMenu />}
       </button>
-      {icon && (
-      <div className="text-gray-300 flex flex-col bg-gray-800 gap-[30px] absolute ml-[370px] mt-[210px] h-[150px] w-[115px] items-center py-3">
-        {nav.map((item,key)=>(
-        <h1  key={key} className='hover:text-white font-semibold hover:scale-110 transition-transform duration-300 ease-in-out '><Link to={item.to}>{item.name}</Link></h1>
-     
-       
-      ))}
+
+      {icon && ( // this will conditionally render the menu when icon is true
+    <div className={`md:hidden left-0 fixed top-0 z-60 transition-transform ease-in-out ${icon ? "translate-x-0" : "-translate-x-full"}`}>
+      <div className="text-gray-300 flex flex-col bg-gray-800 gap-[30px] ml-[300px] mt-[50px] h-[150px] w-[115px] items-center py-3">
+        {nav.map((item, key) => (
+          <h1
+            key={key}
+            className="hover:text-white font-semibold hover:scale-110 transition-transform duration-300 ease-in-out"
+          >
+            <Link to={item.to}>{item.name}</Link>
+          </h1>
+        ))}
       </div>
-    )}
+    </div>
+  )
+}
+      
 </nav>
 </>
 
