@@ -13,12 +13,12 @@ import atif from '../assets/Images/atif.jpg'
 import sachin from '../assets/Images/sachin.jpg'
 import vishal from '../assets/Images/vishal.jpg'
 const songs = [
-  { img: gta, title: "Pal Pal", artist: "Afusic, AliSoomro Music" },
-  { img: crowd, title: "Superstar", artist: "dox, JASKARAN, Rita Kim" },
-  { img: vidyasagar, title: "Thottu Thottu", artist: "Swarnalatha, Pushpavanam" },
-  { img: vidyasagar, title: "Finding Her", artist: "Kushagra, Bharath, Saaheal" },
+  { img:"https://res.cloudinary.com/dzmfopf1b/image/upload/v1745637612/vidyasagar_zrtclt.jpg", title: "Pal Pal", artist: "Afusic, AliSoomro Music" },
+  { img:"https://res.cloudinary.com/dzmfopf1b/image/upload/v1745637612/vishal_pnftrm.jpg", title: "Superstar", artist: "dox, JASKARAN, Rita Kim" },
+  { img:"https://res.cloudinary.com/dzmfopf1b/image/upload/v1745637611/sachin_ya0t7i.jpg", title: "Thottu Thottu", artist: "Swarnalatha, Pushpavanam" },
+  { img: "https://res.cloudinary.com/dzmfopf1b/image/upload/v1745637609/crowd_copy_bfcmhp.jpg", title: "Finding Her", artist: "Kushagra, Bharath, Saaheal" },
   { img: backlash, title: "BACKLASH", artist: "Prem Dhillon, The Kidd" },
-  { img: maand, title: "Maand", artist: "Bayaa, Hasan Raheem, Rovalio" },
+  { img:"https://res.cloudinary.com/dzmfopf1b/image/upload/v1745637608/maand_edvyms.jpg", title: "Maand", artist: "Bayaa, Hasan Raheem, Rovalio" },
 
  
 ];
