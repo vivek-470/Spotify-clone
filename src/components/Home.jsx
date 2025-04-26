@@ -1,11 +1,9 @@
 import React from 'react';
 import { IoMdAdd } from "react-icons/io";
 import { CiGlobe } from "react-icons/ci";
-import gta from '../assets/Images/gta.jpg';
-import crowd from '../assets/Images/crowd.jpg';
-import vidyasagar from '../assets/Images/vidyasagar.jpg';
+
 import backlash from '../assets/Images/backlash.jpg';
-import maand from '../assets/images/maand.jpg';
+
 import pritam from '../assets/Images/pritam.jpg'
 import ar from  '../assets/Images/ar.jpg'
 import Arijit from '../assets/Images/Arijit.jpg'
