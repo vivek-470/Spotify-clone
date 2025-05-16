@@ -21,7 +21,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <nav className="flex fixed bg-black  text-white gap-4 h-[60px] items-center md:w-[100%] reltive px-2 w-full max-w-[1530px]">
+      <nav className="flex fixed bg-black  text-white gap-4 h-[60px] items-center md:w-[100%] reltive px-2 w-full max-w-[14020px]">
         <BsSpotify className="  text-3xl" />
         <IoHome className="text-3xl ml-4 hover:scale-110 transition-transform duration-300 ease-in-out " />
         <div className="lg:w-[500px] bg-gray-900 h-[40px] flex items-center rounded-l-2xl rounded-r-2xl hover:border-2 hover:border-white active:border-2  w-[200px] ">
@@ -61,26 +61,29 @@ export default function Navbar() {
         >
           {icon ? <RxCross1 /> : <GiHamburgerMenu />}
         </button>
-        
+
         {/* ..mobile view */}
-        {icon && ( 
-          <div
-            className={`md:hidden left-0 fixed top-0 z-60 transition-transform ease-in-out ${
-              icon ? "translate-x-0" : "-translate-x-full"
-            }`}
-          >
-            
-            <div className="text-gray-300 flex flex-col bg-gray-800 gap-[30px] ml-[280px] mt-[50px] h-[150px] w-[115px] items-center py-3">
+        {icon && (
+          <div className="md:hidden fixed top-0 left-0 w-full h-screen bg-black z-50 flex flex-col">
+            {/* Cross Icon */}
+            <div className="flex justify-end p-4">
+              <RxCross1
+                className="text-3xl text-white cursor-pointer"
+                onClick={Changeicon}
+              />
+            </div>
+
+            {/* Nav Items */}
+            <div className="flex flex-col items-center gap-6 mt-10 text-white text-lg">
               {nav.map((item, key) => (
-                <h1
+                <Link
                   key={key}
-                  className="hover:text-white font-semibold hover:scale-110 transition-transform duration-300 ease-in-out"
+                  to={item.to}
                   onClick={() => setIcon(false)}
+                  className="hover:text-gray-400 transition"
                 >
-                  <Link to={item.to} onClick={() => setIcon(false)}>
-                    {item.name}
-                  </Link>
-                </h1>
+                  {item.name}
+                </Link>
               ))}
             </div>
           </div>

@@ -7,8 +7,8 @@ import platformimg from '../assets/Images//platform_cherries.jpg'
 
 const Download = () => {
   return (
-    <div className='h-[888px] md:h-[1220px] w-full  relative'>
-      <img className="md:h-[520px] h-[300px] max-w-[487px] object-cover md:max-w-full" src={banner} alt="" />
+    <div className='h-[888px] md:h-[1220px] w-full max-w-[1530px]  relative'>
+      <img className="md:h-[520px] h-[300px] w-full  object-cover max-w-[1530px]" src={banner} alt="" />
       <div className='absolute top-0  md:h-[200px] md:w-[800px]  flex md:ml-[400px] md:mt-[250px] mt-[50px] '>
       <div className=' flex flex-col items-center justify-center w-full gap-7'>
         <h1 className='text-white md:text-5xl text-3xl font-bold'>Download spotify</h1>
